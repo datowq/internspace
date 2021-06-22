@@ -94,15 +94,32 @@ img {
 }
 
 .sidebar {
-	color: rgb(255, 255, 255);
 	width: 2.5em;
-	height: 200em;
+	height: 300vmax;
+	background-color: rgb(255, 255, 255, 0.2);
+	position: fixed;
+}
+
+.sidebar:hover {
 	background-color: rgb(255, 255, 255);
 }
 
 .verticaltext {
 	writing-mode: vertical-rl;
 	text-orientation: upright;
+	padding: -1;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 2.25em;
+	letter-spacing: 1em;
+	vertical-align: center;
+	margin-top: 25vh;
+	position: fixed;
+	color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+}
+
+.sidebar:hover .verticaltext {
+	color: rgba(0, 0, 0);
 }
 
 .content {
