@@ -56,7 +56,7 @@ img {
 }
 
 .parallax {
-	background-image: url("https://www.technocrazed.com/wp-content/uploads/2015/12/HD-Space-Wallpaper-For-Background-1.jpg");
+	background-image: path('images/spacebg.jpg');
 	min-width: 101vh;
 	min-height: 200vh;
 	align-self: center;
@@ -70,7 +70,8 @@ img {
 	position: relative;
 	min-height: 77px;
 	margin-left: 5em;
-	width: 45%;
+	min-width: 45%;
+	max-width: 100%;
 }
 
 .header h1 {
@@ -79,6 +80,7 @@ img {
 	text-decoration: none;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	color: rgb(255, 255, 255);
+
 }
 
 .header button {
