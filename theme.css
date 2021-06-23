@@ -15,12 +15,6 @@ body {
 	overflow-x: hidden;
 }
 
-section {
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1em;
