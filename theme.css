@@ -32,10 +32,6 @@ img {
 	grid-auto-rows: minmax(100px, auto);
 }
 
-.hide {
-	color: rgb(0, 0, 0, 0);
-}
-
 .parallax {
 	background-image: url("images/spacebg.jpg");
 	min-width: 101vh;
@@ -118,7 +114,16 @@ img {
 	margin-right: 2em;
 	text-decoration: none;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-weight: 600;
 	color: rgb(255, 255, 255);
+}
+
+.content i {
+	font-style: italic;
+}
+
+.content b {
+	font-weight: 900 !important;
 }
 
 .footer {
