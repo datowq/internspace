@@ -28,10 +28,10 @@
 		<title>Home</title>
 		<link rel="stylesheet" href="theme.css">
 	</head>
-	<body class="parallax navgrid">
+	<body onload="UpdateText()" class="parallax navgrid">
 		<div class="sidebar"></div>
 		<section class="header">
-			<h1>home</h1>
+			<h1>Intern Home Page</h1>
 			<div class="navbar">
 				<a href="index.html"><button class="hide" title="ET go home">home</button></a>
 				<a href="about.html"><button class="hide" title="intern descriptions (we aren't very interesting)">about</button></a>
@@ -42,11 +42,14 @@
 		</section>
 
 		<section class="content">
-			<p>some paragraph or sum</p>
+			<div>
+				<p style="font-size: 30px;">Quote of the Day</p>
+				<p id="dayText"></p>
+			</div>
 		</section>
 
 		<section class="footer">
-			<p>footer or something</p>
+			<p>For more info, ask your manager</p>
 		</section>
 	</body>
 </html>
