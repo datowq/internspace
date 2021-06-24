@@ -1,5 +1,5 @@
-let quotes = 
-["Looking for something is a waste of time, losing something, now that's an art form.",
+let quotes = [
+"Looking for something is a waste of time, losing something, now that's an art form.",
 "An open house is like a garage sale for criminals",
 "Creating a website is a lot like raising children, it takes forever and they are ungrateful",
 "If you close your eyes you can no longer see clearly",
@@ -30,8 +30,8 @@ let quotes =
 "30",
 "31",
 "32",
-"33"];
-
+"33"
+];
 
 function UpdateText()
 {
@@ -43,5 +43,5 @@ function GetQuote()
     var today = new Date();
     var date = today.getDate();
 
-    return quotes[Math.min(quotes.length - 1, date)];
+    return "-" + quotes[Math.min(quotes.length - 1, date)];
 }
