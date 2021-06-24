@@ -20,9 +20,9 @@ let quotes =
 "20",
 "21",
 "22",
-"23",
-"24",
-"25",
+"hi",
+"Working 20 hours a week is for chumps...and Brian",
+"hi",
 "Quote of the day more like NO of the day!",
 "27",
 "28",
@@ -41,7 +41,7 @@ function UpdateText()
 function GetQuote()
 {
     var today = new Date();
-    var date = today.getDate();
+    var date = today.getDate()-2;
 
     return quotes[Math.min(quotes.length - 1, date)];
 }
