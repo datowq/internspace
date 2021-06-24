@@ -148,7 +148,7 @@ img {
 }
 
 .parallax {
-	background-image: url("images/spacebg.jpg");
+	background-image: url("../images/spacebg.jpg");
 	min-width: 101vh;
 	min-height: 200vh;
 	align-self: center;
