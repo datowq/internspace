@@ -1,162 +1,161 @@
 <!DOCTYPE html><!--
-		  _____                    _____                _____                    _____                    _____                    _____                    _____          
-		 /\    \                  /\    \              /\    \                  /\    \                  /\    \                  /\    \                  /\    \         
-		/::\    \                /::\____\            /::\    \                /::\    \                /::\    \                /::\____\                /::\    \        
-		\:::\    \              /::::|   |            \:::\    \              /::::\    \              /::::\    \              /::::|   |               /::::\    \       
-		 \:::\    \            /:::::|   |             \:::\    \            /::::::\    \            /::::::\    \            /:::::|   |              /::::::\    \      
-		  \:::\    \          /::::::|   |              \:::\    \          /:::/\:::\    \          /:::/\:::\    \          /::::::|   |             /:::/\:::\    \     
-		   \:::\    \        /:::/|::|   |               \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \        /:::/|::|   |            /:::/__\:::\    \    
-		   /::::\    \      /:::/ |::|   |               /::::\    \      /::::\   \:::\    \      /::::\   \:::\    \      /:::/ |::|   |            \:::\   \:::\    \   
-  ____    /::::::\    \    /:::/  |::|   | _____        /::::::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \    /:::/  |::|   | _____    ___\:::\   \:::\    \  
- /\   \  /:::/\:::\    \  /:::/   |::|   |/\    \      /:::/\:::\    \  /:::/\:::\   \:::\    \  /:::/\:::\   \:::\____\  /:::/   |::|   |/\    \  /\   \:::\   \:::\    \ 
+	_____                    _____                _____                    _____                    _____                    _____                    _____          
+   /\    \                  /\    \              /\    \                  /\    \                  /\    \                  /\    \                  /\    \         
+  /::\    \                /::\____\            /::\    \                /::\    \                /::\    \                /::\____\                /::\    \        
+  \:::\    \              /::::|   |            \:::\    \              /::::\    \              /::::\    \              /::::|   |               /::::\    \       
+   \:::\    \            /:::::|   |             \:::\    \            /::::::\    \            /::::::\    \            /:::::|   |              /::::::\    \      
+	\:::\    \          /::::::|   |              \:::\    \          /:::/\:::\    \          /:::/\:::\    \          /::::::|   |             /:::/\:::\    \     
+	 \:::\    \        /:::/|::|   |               \:::\    \        /:::/__\:::\    \        /:::/__\:::\    \        /:::/|::|   |            /:::/__\:::\    \    
+	 /::::\    \      /:::/ |::|   |               /::::\    \      /::::\   \:::\    \      /::::\   \:::\    \      /:::/ |::|   |            \:::\   \:::\    \   
+____    /::::::\    \    /:::/  |::|   | _____        /::::::\    \    /::::::\   \:::\    \    /::::::\   \:::\    \    /:::/  |::|   | _____    ___\:::\   \:::\    \  
+/\   \  /:::/\:::\    \  /:::/   |::|   |/\    \      /:::/\:::\    \  /:::/\:::\   \:::\    \  /:::/\:::\   \:::\____\  /:::/   |::|   |/\    \  /\   \:::\   \:::\    \ 
 /::\   \/:::/  \:::\____\/:: /    |::|   /::\____\    /:::/  \:::\____\/:::/__\:::\   \:::\____\/:::/  \:::\   \:::|    |/:: /    |::|   /::\____\/::\   \:::\   \:::\____\
 \:::\  /:::/    \::/    /\::/    /|::|  /:::/    /   /:::/    \::/    /\:::\   \:::\   \::/    /\::/   |::::\  /:::|____|\::/    /|::|  /:::/    /\:::\   \:::\   \::/    /
- \:::\/:::/    / \/____/  \/____/ |::| /:::/    /   /:::/    / \/____/  \:::\   \:::\   \/____/  \/____|:::::\/:::/    /  \/____/ |::| /:::/    /  \:::\   \:::\   \/____/ 
-  \::::::/    /                   |::|/:::/    /   /:::/    /            \:::\   \:::\    \            |:::::::::/    /           |::|/:::/    /    \:::\   \:::\    \     
-   \::::/____/                    |::::::/    /   /:::/    /              \:::\   \:::\____\           |::|\::::/    /            |::::::/    /      \:::\   \:::\____\    
-	\:::\    \                    |:::::/    /    \::/    /                \:::\   \::/    /           |::| \::/____/             |:::::/    /        \:::\  /:::/    /    
-	 \:::\    \                   |::::/    /      \/____/                  \:::\   \/____/            |::|  ~|                   |::::/    /          \:::\/:::/    /     
-	  \:::\    \                  /:::/    /                                 \:::\    \                |::|   |                   /:::/    /            \::::::/    /      
-	   \:::\____\                /:::/    /                                   \:::\____\               \::|   |                  /:::/    /              \::::/    /       
-		\::/    /                \::/    /                                     \::/    /                \:|   |                  \::/    /                \::/    /        
-		 \/____/                  \/____/                                       \/____/                  \|___|                   \/____/                  \/____/         
-																																										   
+\:::\/:::/    / \/____/  \/____/ |::| /:::/    /   /:::/    / \/____/  \:::\   \:::\   \/____/  \/____|:::::\/:::/    /  \/____/ |::| /:::/    /  \:::\   \:::\   \/____/ 
+\::::::/    /                   |::|/:::/    /   /:::/    /            \:::\   \:::\    \            |:::::::::/    /           |::|/:::/    /    \:::\   \:::\    \     
+\::::/____/                    |::::::/    /   /:::/    /              \:::\   \:::\____\           |::|\::::/    /            |::::::/    /      \:::\   \:::\____\    
+\:::\    \                    |:::::/    /    \::/    /                \:::\   \::/    /           |::| \::/____/             |:::::/    /        \:::\  /:::/    /    
+\:::\    \                   |::::/    /      \/____/                  \:::\   \/____/            |::|  ~|                   |::::/    /          \:::\/:::/    /     
+\:::\    \                  /:::/    /                                 \:::\    \                |::|   |                   /:::/    /            \::::::/    /      
+ \:::\____\                /:::/    /                                   \:::\____\               \::|   |                  /:::/    /              \::::/    /       
+  \::/    /                \::/    /                                     \::/    /                \:|   |                  \::/    /                \::/    /        
+   \/____/                  \/____/                                       \/____/                  \|___|                   \/____/                  \/____/         
+																																									 
 -->
 <html lang="en">
-	<head>
-		<title>Home</title>
-		<link rel="stylesheet" href="theme.css">
-		<link rel="shortcut icon" href="icon.ico"
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script type="text/javascript" src="quoteoftheday.js"></script>
-		<script type="text/javascript" src="title.js"></script>
-	</head>
-	<body onload="UpdateText()" class="parallax navgrid">
-		<div class="sidebar nav1"></div>
-		
-		<section class="header nav1">
-			<h1 class="fade-in">interns</h1>
-			<div class="navbar">
-				<a href="index.html"><button class="hide" title="ET go home">home</button></a>
-				<a href="about.html"><button class="hide" title="intern descriptions (we aren't very interesting)">about</button></a>
-				<a href="links.html"><button class="hide" title="some resources">links</button></a>
-				<a href="isaac.html"><button class="hide" title="the man himself">isaac</button></a>
-				<a href="help.html"><button class="hide" title="ask away">help</button></a>
-				<a href="messing.html"><button class="hide" title="how">messing around</button></a>
-			</div>
-		</section>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="theme.css">
+  <link rel="shortcut icon" href="icon.ico"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="quoteoftheday.js"></script>
+</head>
+<body onload="UpdateText()" class="parallax navgrid">
+  <div class="sidebar nav1"></div>
+  
+  <section class="header nav1">
+	  <h1>interns</h1>
+	  <div class="navbar">
+		  <a class="btn btn-white-outline" href="index.html">home</a>
+		  <a href="about.html"><button class="hide" title="intern descriptions (we aren't very interesting)">about</button></a>
+		  <a href="links.html"><button class="hide" title="some resources">links</button></a>
+		  <a href="isaac.html"><button class="hide" title="the man himself">isaac</button></a>
+		  <a href="help.html"><button class="hide" title="ask away">help</button></a>
+		  <a href="messing.html"><button class="hide" title="how">messing around</button></a>
+	  </div>
+  </section>
 
-		<section class="content">
-			<div>
-				<p style="font-size: 30px;">Quote of the Day</p>
-				<p id="dayText"></p>
-			</div>
+  <section class="content">
+	  <div>
+		  <p style="font-size: 30px;">Quote of the Day</p>
+		  <p id="dayText"></p>
+	  </div>
 
-			<div class="month">
-				<p>June 2021</p>
-			</div>
-			<div>
-				<ul class="weekdays">
-					<li>Mo</li>
-					<li>Tu</li>
-					<li>We</li>
-					<li>Th</li>
-					<li>Fr</li>
-					<li>Sa</li>
-					<li>Su</li>
-				  </ul>
-			</div>
-			<div>
-				<ul class="days">
-					<li> </li>
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>4</li>
-					<li>5</li>
-					<li>6</li>
-					<li>7</li>
-					<li>8</li>
-					<li>9</li>
-					<li>10</li>
-					<li>11</li>
-					<li>12</li>
-					<li>13</li>
-					<li>14</li>
-					<li>15</li>
-					<li>16</li>
-					<li>17</li>
-					<li>18</li>
-					<li>19</li>
-					<li>20</li>
-					<li>21</li>
-					<li>22</li>
-					<li>23</li>
-					<li>24</li>
-					<li>25</li>
-					<li>26</li>
-					<li>27</li>
-					<li>28</li>
-					<li>29</li>
-					<li>30</li>
-			</div>
+	  <div class="month">
+		  <p>June 2021</p>
+	  </div>
+	  <div>
+		  <ul class="weekdays">
+			  <li>Mo</li>
+			  <li>Tu</li>
+			  <li>We</li>
+			  <li>Th</li>
+			  <li>Fr</li>
+			  <li>Sa</li>
+			  <li>Su</li>
+			</ul>
+	  </div>
+	  <div>
+		  <ul class="days">
+			  <li> </li>
+			  <li>1</li>
+			  <li>2</li>
+			  <li>3</li>
+			  <li>4</li>
+			  <li>5</li>
+			  <li>6</li>
+			  <li>7</li>
+			  <li>8</li>
+			  <li>9</li>
+			  <li>10</li>
+			  <li>11</li>
+			  <li>12</li>
+			  <li>13</li>
+			  <li>14</li>
+			  <li>15</li>
+			  <li>16</li>
+			  <li>17</li>
+			  <li>18</li>
+			  <li>19</li>
+			  <li>20</li>
+			  <li>21</li>
+			  <li>22</li>
+			  <li>23</li>
+			  <li>24</li>
+			  <li>25</li>
+			  <li>26</li>
+			  <li>27</li>
+			  <li>28</li>
+			  <li>29</li>
+			  <li>30</li>
+	  </div>
 
-			<div class="month">
-				<p>July 2021</p>
-			</div>
-			<div>
-				<ul class="weekdays">
-					<li>Mo</li>
-					<li>Tu</li>
-					<li>We</li>
-					<li>Th</li>
-					<li>Fr</li>
-					<li>Sa</li>
-					<li>Su</li>
-				  </ul>
-			</div>
-			<div>
-				<ul class="days">
-					<li> </li>
-					<li> </li>
-					<li> </li>
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>4</li>
-					<li>5</li>
-					<li>6</li>
-					<li>7</li>
-					<li>8</li>
-					<li>9</li>
-					<li>10</li>
-					<li>11</li>
-					<li>12</li>
-					<li>13</li>
-					<li>14</li>
-					<li>15</li>
-					<li>16</li>
-					<li>17</li>
-					<li>18</li>
-					<li>19</li>
-					<li>20</li>
-					<li>21</li>
-					<li>22</li>
-					<li>23</li>
-					<li>24</li>
-					<li>25</li>
-					<li>26</li>
-					<li>27</li>
-					<li>28</li>
-					<li>29</li>
-					<li>30</li>
-					<li>31</li>
-			</div>
-			
-		</section>
+	  <div class="month">
+		  <p>July 2021</p>
+	  </div>
+	  <div>
+		  <ul class="weekdays">
+			  <li>Mo</li>
+			  <li>Tu</li>
+			  <li>We</li>
+			  <li>Th</li>
+			  <li>Fr</li>
+			  <li>Sa</li>
+			  <li>Su</li>
+			</ul>
+	  </div>
+	  <div>
+		  <ul class="days">
+			  <li> </li>
+			  <li> </li>
+			  <li> </li>
+			  <li>1</li>
+			  <li>2</li>
+			  <li>3</li>
+			  <li>4</li>
+			  <li>5</li>
+			  <li>6</li>
+			  <li>7</li>
+			  <li>8</li>
+			  <li>9</li>
+			  <li>10</li>
+			  <li>11</li>
+			  <li>12</li>
+			  <li>13</li>
+			  <li>14</li>
+			  <li>15</li>
+			  <li>16</li>
+			  <li>17</li>
+			  <li>18</li>
+			  <li>19</li>
+			  <li>20</li>
+			  <li>21</li>
+			  <li>22</li>
+			  <li>23</li>
+			  <li>24</li>
+			  <li>25</li>
+			  <li>26</li>
+			  <li>27</li>
+			  <li>28</li>
+			  <li>29</li>
+			  <li>30</li>
+			  <li>31</li>
+	  </div>
+	  
+  </section>
 
-		<footer>
-			<p></p>
-		</footer>
-	</body>
+  <section class="footer">
+	  <p>some footer stuff</p>
+  </section>
+</body>
 </html>
