@@ -1,4 +1,5 @@
 /* future ref: https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
 	margin: 0;
@@ -31,7 +32,7 @@ img {
 	grid-template-rows: 10em auto 2.5em;
 	grid-template-columns: 2.5em auto;
 	gap: 0px;
-	row-gap: 2em;
+	row-gap: 5px;
 }
 
 .parallax {
@@ -69,18 +70,22 @@ img {
 	color: rgba(0, 0, 0, 0);
 }
 
+section {
+	font-family: 'Poppins';
+}
+
 .header {
 	grid-column: 2;
 	position: relative;
 	min-height: 77px;
-	margin-left: 5em;
+	margin-left: 3em;
 	min-width: 45%;
 	max-width: 100%;
 }
 
 .header h1 {
 	font-size: 6em;
-	margin: 0em;
+	margin-top: 10px;
 	text-decoration: none;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	color: rgb(255, 255, 255);
@@ -111,9 +116,7 @@ img {
 
 .content {
 	grid-column: 2;
-	margin: 0em;
-	margin-left: 2em;
-	margin-right: 2em;
+	margin-left: 3em;
 	text-decoration: none;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	font-weight: 600;
