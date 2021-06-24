@@ -37,7 +37,9 @@ section h1 {
     font-size: 12em;
 }
 
-.layer {
-    background-position: center;
+a #bthing {
+    position: fixed;
+    justify-content: center;
+    display:flex;
+    align-items: center;
 }
-
