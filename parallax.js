@@ -17,8 +17,8 @@ function parallax(e) {
             offsetX = 100
             offsetY = 100
         }
-        const x = (windowWidth - clientX*factorX)/100 - offsetX
-        const y = (windowHeight - clientY*factorY)/100 - offsetY
+        const x = (windowWidth - clientX*factorX)/90 - offsetX
+        const y = (windowHeight - clientY*factorY)/90 - offsetY
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
 }

@@ -68,10 +68,10 @@ img {
 	max-width: 100%;
 }
 .header h1 {
-	font-size: 6em;
+	font-size: 5.5em;
 	margin-top: 10px;
 	text-decoration: none;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-family: "Poppins", "Arial Narrow", Arial, sans-serif;
 	color: rgb(255, 255, 255);
 }
 .header button {
@@ -79,12 +79,14 @@ img {
 	border: rgb(155, 155, 155);
 	color: rgb(0, 0, 0);
 	cursor: pointer;
+	border-radius: 2px;
 	display: inline-block;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	font-size: 1.25em;
 	padding: 0.5vh 1vw;
 	text-align: center;
 	text-decoration: none;
+	transform: translate(0, -10px);
 }
 .header:after {
 	content: "";
@@ -93,6 +95,7 @@ img {
 }
 .header button:hover {
 	background-color: rgb(101, 182, 214);
+	transition: all 0.2s ease-in-out;
 }
 
 /*! Buttons */
