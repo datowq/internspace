@@ -9,8 +9,8 @@ function parallax(e) {
         const windowHeight = window.innerHeight
         let factorX = 2
         let factorY = 2
-        let offsetX = 0
-        let offsetY = 0
+        let offsetX = -30
+        let offsetY = -30
         if (layer == document.getElementById("spaceimage")) {
             factorX = -0.5
             factorY = -0.5
