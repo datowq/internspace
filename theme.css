@@ -1,3 +1,5 @@
+/* future ref: https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -26,14 +28,10 @@ img {
 
 .navgrid {
 	display: grid;
+	grid-template-rows: 10em auto 2.5em;
 	grid-template-columns: 2.5em auto;
 	gap: 0px;
-	row-gap: 20px;
-	grid-auto-rows: minmax(100px, auto);
-}
-
-.hide {
-	color: rgb(0, 0, 0, 0);
+	row-gap: 2em;
 }
 
 .parallax {
@@ -118,10 +116,20 @@ img {
 	margin-right: 2em;
 	text-decoration: none;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-weight: 600;
 	color: rgb(255, 255, 255);
 }
 
+.content i {
+	font-style: italic;
+}
+
+.content b {
+	font-weight: 900 !important;
+}
+
 .footer {
+	grid-row: 3;
 	background-color: rgb(255, 255, 255);
 	bottom: 0;
 	color: rgb(0, 0, 0);
