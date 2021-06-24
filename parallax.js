@@ -1,19 +1,24 @@
 document.addEventListener("mousemove", parallax)
 const elem = document
+
 function parallax(e) {
     this.querySelectorAll('.layer').forEach(layer => {
-        let xx = e.clientX
-        let yy = e.clientY
-        let aa=0
-        let bb=0
-        const speed = layer.getAttribute('data-speed')
-        if(document.getElementById("spaceimage")) {
-            aa=200
-            bb=50
+        const clientX = e.clientX
+        const clientY = e.clientY
+        const windowWidth = window.innerWidth
+        const windowHeight = window.innerHeight
+        let factorX = 2
+        let factorY = 2
+        let offsetX = 0
+        let offsetY = 0
+        if (layer == document.getElementById("spaceimage")) {
+            factorX = -0.5
+            factorY = -0.5
+            offsetX = 100
+            offsetY = 100
         }
-        const x = (window.innerWidth - e.clientX*speed)/100 -aa
-        const y = (window.innerHeight - e.clientY*speed)/100 -bb
-        console.log(xx, yy)
+        const x = (windowWidth - clientX*factorX)/100 - offsetX
+        const y = (windowHeight - clientY*factorY)/100 - offsetY
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
 }
