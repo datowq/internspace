@@ -83,14 +83,7 @@ img {
 .content b {
 	font-weight: 900 !important;
 }
-.content h1 {
-	font-size: 2em;
-	margin-bottom: 0.75em;
-}
-.content h2 {
-	font-size: 1.75em;
-	margin-bottom: 0.75em;
-}
+
 .footer {
 	grid-row: 3;
 	grid-column: 1 / 2;

@@ -1,49 +1,33 @@
-let quotes = [
-	"Looking for something is a waste of time, losing something, now that's an art form.",
-	"An open house is like a garage sale for criminals",
-	"Creating a website is a lot like raising children, it takes forever and they are ungrateful",
-	"If you close your eyes you can no longer see clearly",
-	"Updating file names is about as much fun as it sounds",
-	"Working 20 hours a week is for chumps...and Brian",
-	"HTML, the way to make websites before websites wanted to be made",
-	'"Wait! We\'re NOT getting paied" -Some intern NOT at Lockheed',
-	"Here at work we get lots of things done. In fact yesterday I sent one whole email! Now that's progress",
-	"10",
-	"11",
-	"12",
-	"13",
-	"14",
-	"15",
-	"16",
-	"17",
-	"18",
-	"19",
-	"20",
-	"21",
-	"hi",
-	"Working 20 hours a week is for chumps...and Brian",
-	"hi",
-	"Quote of the day more like NO of the day!",
-	"26",
-	"27",
-	"28",
-	"29",
-	"30",
-	"31",
-]
+const monthOffset = 1
 
-async function StartQOTD() {
+async function updateQOTD(day, month, year) {
+	let quotesResponse = await fetch("https://quotes.rest/qod?category=funny&language=en")
+	let quotesQOTD = await quotesResponse.json()
+	let quote = quotesQOTD.contents.quotes[0]
+	const qotdTitleElement = document.getElementById("qotdTitle")
 	const qotdElement = document.getElementById("qotd")
-	const date = new Date()
-	let day = date.getDate()
-	let month = date.getDate()
+	const qotdAuthorElement = document.getElementById("qotdAuthor")
+	qotdTitleElement.innerHTML = `Quote of the Day for ${month}/${day}/${year}`
+	qotdElement.innerHTML = `"${quote.quote}"`
+	qotdAuthorElement.innerHTML = quote.author
+	//curl -X GET "https://quotes.rest/qod?category=funny&language=en" -H "accept: application/json"
+}
+
+function StartQOTD() {
+	let date = new Date()
+	let day = 0
+	let month = date.getMonth() + monthOffset
 	let year = date.getFullYear()
 	setInterval(() => {
-		day = date.getDate()
-		month = date.getDate()
-		year = date.getFullYear()
-		qotd = quotes[day - 1]
-		qotdElement.innerHTML = `Quote of the Day for ${day}-${month}-${year}<br>${qotd}`
+		date = new Date()
+		const currentDay = date.getDate()
+		if (day != currentDay) {
+			day = currentDay
+			month = date.getMonth() + monthOffset
+			year = date.getFullYear()
+			qotd = updateQOTD(day, month, year)
+		}
 	}, 1000)
 }
 
+document.addEventListener("DOMContentLoaded", StartQOTD, false)

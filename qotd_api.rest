@@ -1,0 +1,1 @@
+curl -X GET "https://quotes.rest/qod?category=funny&language=en" -H "accept: application/json"
