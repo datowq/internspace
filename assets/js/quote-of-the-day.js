@@ -23,7 +23,7 @@ let quotes = [
 	"hi",
 	"Working 20 hours a week is for chumps...and Brian",
 	"hi",
-	"Quote of the day more like NO of the day!",
+	"Quote of the day? More like NO of the day!",
 	"26",
 	"27",
 	"28",
