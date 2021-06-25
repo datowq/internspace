@@ -15,9 +15,10 @@ async function updateQOTD(day, month, year) {
 
 function StartQOTD() {
 	let date = new Date()
-	let day = 0
+	let day = date.getDate()
 	let month = date.getMonth() + monthOffset
 	let year = date.getFullYear()
+	qotd = updateQOTD(day, month, year)
 	setInterval(() => {
 		date = new Date()
 		const currentDay = date.getDate()
