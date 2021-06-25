@@ -45,3 +45,7 @@ function GetQuote()
 
     return "-" + quotes[Math.min(quotes.length - 1, date)];
 }
+
+document.onload = function () {
+    
+}

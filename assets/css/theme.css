@@ -30,51 +30,21 @@ img {
 	display: table;
 }
 
-.content {
-	grid-column: 2;
-	margin-left: 3em;
-	text-decoration: none;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-	font-weight: 600;
-	color: rgb(255, 255, 255);
-}
-.content i {
-	font-style: italic;
-}
-.content b {
-	font-weight: 900 !important;
-}
-
-.footer {
-	grid-row: 3;
-	grid-column: 1 / 2;
-	background-color: rgb(255, 255, 255);
-	bottom: 0;
-	color: rgb(0, 0, 0);
-	left: 0;
-	position: fixed;
-	height: 2.5em;
-	width: 100%;
-	text-align: center;
-}
-.footer p {
-	font-family: "Poppins";
-	font-size: 1.5em;
-}
-
 .header {
 	grid-column: 2;
 	position: relative;
 	min-height: 77px;
 	margin-left: 3em;
+	margin-bottom: 3em;
 	min-width: 45%;
 	max-width: 100%;
 }
-
-.header::selection { background: transparent; }
-
-.header h1 {
-	font-size: 5.5em;
+.header::selection {
+	background: transparent;
+}
+.header h1,
+.header h1 > a {
+	font-size: 2.25em;
 	margin-top: 10px;
 	text-decoration: none;
 	font-family: "Poppins", "Arial Narrow", Arial, sans-serif;
@@ -102,6 +72,48 @@ img {
 .header button:hover {
 	background-color: rgb(101, 182, 214);
 	transition: all 0.2s ease-in-out;
+}
+
+.content {
+	grid-column: 2;
+	margin-top: 2em;
+	margin-left: 3em;
+	margin-right: 2.5em;
+	text-decoration: none;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-weight: 600;
+	color: rgb(255, 255, 255);
+}
+.content i {
+	font-style: italic;
+}
+.content b {
+	font-weight: 900 !important;
+}
+.content h1 {
+	font-size: 2em;
+	margin-bottom: 0.75em;
+}
+.content h2 {
+	font-size: 1.75em;
+	margin-bottom: 0.75em;
+}
+
+.footer {
+	grid-row: 3;
+	grid-column: 1 / 2;
+	background-color: rgb(255, 255, 255);
+	bottom: 0;
+	color: rgb(0, 0, 0);
+	left: 0;
+	position: fixed;
+	height: 2.5em;
+	width: 100%;
+	text-align: center;
+}
+.footer p {
+	font-family: "Poppins";
+	font-size: 1.5em;
 }
 
 /*! Buttons */
@@ -150,7 +162,6 @@ img {
 	grid-template-rows: 10em auto 2.5em;
 	grid-template-columns: 2.5em auto;
 	gap: 0px;
-	row-gap: 5px;
 }
 
 .parallax {
@@ -169,40 +180,6 @@ img {
 	height: 300vmax;
 	background-color: rgb(255, 255, 255);
 	position: fixed;
-}
-
-.month {
-	padding: 20px 10px;
-	width: 90%;
-	background: #1abc9c;
-	text-align: center;
-}
-.weekdays {
-	margin: 0;
-	width: 90%;
-	padding: 10px 0;
-	background-color: #ddd;
-}
-.weekdays li {
-	display: inline-block;
-	width: 13.6%;
-	color: #666;
-	text-align: center;
-}
-.days {
-	width: 90%;
-	padding: 10px 0;
-	background: #eee;
-	margin: 0;
-}
-.days li {
-	list-style-type: none;
-	display: inline-block;
-	width: 13.6%;
-	text-align: center;
-	margin-bottom: 5px;
-	font-size: 12px;
-	color: #777;
 }
 
 .fade-in {
