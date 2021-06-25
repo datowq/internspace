@@ -22,4 +22,36 @@ function parallax(e) {
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
 }
+
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 20s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #2b6792
+    }
+
+    30% {
+        background-color: #8a2956
+    }
+
+    60% {
+        background-color: #8b4c22
+    }
+
+    90% {
+        background-color: rgb(158, 47, 66)
+    }
+
+    100% {
+        background-color: #7a6623
+    }
+}
+
+
  */
