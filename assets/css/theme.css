@@ -8,7 +8,6 @@
 	font-family: "Poppins";
 	text-decoration: none;
 }
-
 body {
 	position: relative;
 	background-color: rgb(51, 51, 51);
@@ -17,19 +16,10 @@ body {
 	padding-bottom: 0;
 	overflow-x: hidden;
 }
-
 body::selection { background: transparent; }
-
 img {
 	max-width: 100%;
 }
-
-.clearfix::after {
-	content: "";
-	clear: both;
-	display: table;
-}
-
 .header {
 	grid-column: 2;
 	position: relative;
@@ -49,6 +39,10 @@ img {
 	text-decoration: none;
 	font-family: "Poppins", "Arial Narrow", Arial, sans-serif;
 	color: rgb(255, 255, 255);
+}
+.header h1>a:hover {
+	color: rgb(101, 182, 214);
+	transition: all 0.2s ease-in-out;
 }
 .header button {
 	background-color: beige;
@@ -73,7 +67,6 @@ img {
 	background-color: rgb(101, 182, 214);
 	transition: all 0.2s ease-in-out;
 }
-
 .content {
 	grid-column: 2;
 	margin-top: 2em;
@@ -98,7 +91,6 @@ img {
 	font-size: 1.75em;
 	margin-bottom: 0.75em;
 }
-
 .footer {
 	grid-row: 3;
 	grid-column: 1 / 2;
@@ -115,7 +107,6 @@ img {
 	font-family: "Poppins";
 	font-size: 1.5em;
 }
-
 /*! Buttons */
 .btn {
 	-webkit-align-items: center;
@@ -156,14 +147,12 @@ img {
 	background-color: #ffffff;
 	border-color: #ffffff;
 }
-
 .navgrid {
 	display: grid;
 	grid-template-rows: 10em auto 2.5em;
 	grid-template-columns: 2.5em auto;
 	gap: 0px;
 }
-
 .parallax {
 	background-image: url("../images/spacebg.jpg");
 	min-width: 101vh;
@@ -174,18 +163,15 @@ img {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
 .sidebar {
 	width: 2.5em;
 	height: 300vmax;
 	background-color: rgb(255, 255, 255);
 	position: fixed;
 }
-
 .fade-in {
 	animation: fadeIn ease 1s;
 }
-
 @keyframes fadeIn {
 	0% {
 	  opacity:0;
