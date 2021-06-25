@@ -1,5 +1,4 @@
 document.addEventListener("mousemove", parallax)
-const elem = document
 
 function parallax(e) {
     const x = (window.innerWidth - e.clientX*-0.5)/90 -134
