@@ -3,13 +3,11 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	font-family: "Poppins";
 }
 
 body {
 	background-color: #111;
-	background: #111;
 }
 
 section {
@@ -20,8 +18,8 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 }
+
 section img {
 	position: absolute;
 	top: 0;
@@ -36,8 +34,9 @@ section h1 {
 	position: absolute;
 	color: #fff;
 	font-size: 16em;
-	transform: translate(0, -20%);
 	text-shadow: 5px 5px black;
+	animation: schmove ease 1.5s;
+	animation-fill-mode: forwards;
 }
 
 section h1::selection { background: transparent; }
@@ -48,6 +47,8 @@ section h1::selection { background: transparent; }
 	left: 50%;
 	transform: translate(-50%, +80%);
 	transform: translate(-50%, +7em);
+	animation: fadeIn ease 1.5s;
+	animation-fill-mode: forwards;
 }
 
 /*! Buttons */
@@ -93,11 +94,6 @@ section h1::selection { background: transparent; }
 	text-shadow: 0px 0px white;
 }
 
-.fade-in {
-	animation: fadeIn ease 2s;
-	animation-fill-mode: forwards;
-}
-
 @keyframes fadeIn {
 	0% {
 	  opacity:0;
@@ -107,23 +103,13 @@ section h1::selection { background: transparent; }
 	}
 }
 
-.fade-in2 {
-	animation: fadeIn ease-in-out 1s;
-	animation-fill-mode: forwards;
-}
-
-.schmoovin {
-	animation: schmove ease 1.5s;
-	animation-fill-mode: forwards;
-}
-
 @keyframes schmove {
 	0% {
 	  opacity:0;
-	  transform: translateY(-300px);
+	  transform: translateY(-350px);
 	}
 	100% {
 	  opacity:1;
-	  transform: translateY(normal);
+	  transform: translateY(-100px);
 	}
 }
