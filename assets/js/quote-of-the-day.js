@@ -43,6 +43,6 @@ async function StartQOTD() {
 		month = date.getDate()
 		year = date.getFullYear()
 		qotd = quotes[day - 1]
-		qotdElement.textContent = `Quote of the Day for ${day}-${month}-${year}\n${qotd}`
+		qotdElement.innerHTML = `Quote of the Day for ${day}-${month}-${year}<br>${qotd}`
 	}, 1000)
 }
