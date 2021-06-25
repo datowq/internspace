@@ -39,6 +39,7 @@ img {
 	text-decoration: none;
 	font-family: "Poppins", "Arial Narrow", Arial, sans-serif;
 	color: rgb(255, 255, 255);
+	text-shadow: 3px 3px rgb(0, 0, 0);
 }
 .header h1>a:hover {
 	color: rgb(101, 182, 214);
