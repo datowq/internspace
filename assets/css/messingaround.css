@@ -26,8 +26,9 @@ section img {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 110vw;
-	height: 110vh;
+	transform: translate(-5%, -10%);
+	width: 115vw;
+	height: 115vh;
 	object-fit: cover;
 }
 
@@ -36,7 +37,10 @@ section h1 {
 	color: #fff;
 	font-size: 16em;
 	transform: translate(0, -20%);
+	text-shadow: 5px 5px black;
 }
+
+section h1::selection { background: transparent; }
 
 #centered-button {
 	position: absolute;
@@ -70,6 +74,8 @@ section h1 {
 	transition: all 0.3s ease-in-out;
 	white-space: normal;
 	word-break: break-word;
+	text-shadow: 2px 2px rgb(0, 0, 0);
+	
 }
 .btn-white-outline,
 .btn-white-outline:active,
@@ -84,6 +90,7 @@ section h1 {
 	color: #000000;
 	background-color: #ffffff;
 	border-color: #ffffff;
+	text-shadow: 0px 0px white;
 }
 
 .fade-in {
@@ -101,6 +108,22 @@ section h1 {
 }
 
 .fade-in2 {
-	animation: fadeIn ease 3s;
+	animation: fadeIn ease-in-out 1s;
 	animation-fill-mode: forwards;
+}
+
+.schmoovin {
+	animation: schmove ease 1.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes schmove {
+	0% {
+	  opacity:0;
+	  transform: translateY(-300px);
+	}
+	100% {
+	  opacity:1;
+	  transform: translateY(normal);
+	}
 }
