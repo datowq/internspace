@@ -6,6 +6,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins";
+	text-decoration: none;
 }
 
 body {
@@ -16,6 +17,8 @@ body {
 	padding-bottom: 0;
 	overflow-x: hidden;
 }
+
+body::selection { background: transparent; }
 
 img {
 	max-width: 100%;
@@ -67,6 +70,9 @@ img {
 	min-width: 45%;
 	max-width: 100%;
 }
+
+.header::selection { background: transparent; }
+
 .header h1 {
 	font-size: 5.5em;
 	margin-top: 10px;
