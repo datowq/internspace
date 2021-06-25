@@ -83,14 +83,27 @@ img {
 .content b {
 	font-weight: 900 !important;
 }
-.content h1 {
-	font-size: 2em;
-	margin-bottom: 0.75em;
+
+.content .qotd {
+	margin: 2em;
 }
-.content h2 {
-	font-size: 1.75em;
-	margin-bottom: 0.75em;
+.content .qotd #qotdTitle {
+	text-align: center;
+	font-size: 1.5em;
 }
+.content .qotd #qotd {
+	text-align: center;
+	font-size: 1.25em;
+	text-shadow: 2px 2px 3px black;
+	
+}
+.content .qotd #qotdAuthor {
+	text-align: center;
+	font-size: 1.25em;
+	color:rgb(255, 210, 210);
+	text-shadow: 2px 2px 3px black;
+}
+
 .footer {
 	grid-row: 3;
 	grid-column: 1 / 2;
