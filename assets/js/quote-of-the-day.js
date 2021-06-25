@@ -46,3 +46,4 @@ async function StartQOTD() {
 		qotdElement.innerHTML = `Quote of the Day for ${day}-${month}-${year}<br>${qotd}`
 	}, 1000)
 }
+

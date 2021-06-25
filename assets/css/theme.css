@@ -169,6 +169,14 @@ img {
 	background-color: rgb(255, 255, 255);
 	position: fixed;
 }
+#qotd-wrapper {
+	height:0;
+	overflow: hidden;
+	transition: height 0.66s ease-out;
+}
+#qotd-wrapper.loaded {
+	height: 100px
+}
 .fade-in {
 	animation: fadeIn ease 1s;
 }
