@@ -3,4 +3,4 @@ document.addEventListener("keypress", function(e) {
         e.preventDefault()
         document.getElementById("centered-button").click()
     }
-});
+})
