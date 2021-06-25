@@ -1,13 +1,13 @@
 const monthOffset = 1
 
 async function updateQOTD(day, month, year) {
-	let quotesResponse = await fetch("https://quotes.rest/qod?category=funny&language=en")
+	let quotesResponse = await fetch("https://quotes.rest/qod?category=management&language=en")
 	let quotesQOTD = await quotesResponse.json()
 	let quote = quotesQOTD.contents.quotes[0]
 	const qotdTitleElement = document.getElementById("qotdTitle")
 	const qotdElement = document.getElementById("qotd")
 	const qotdAuthorElement = document.getElementById("qotdAuthor")
-	qotdTitleElement.innerHTML = `Quote of the Day for ${month}/${day}/${year}`
+	qotdTitleElement.innerHTML = `Quote of the Day - ${month}/${day}/${year}`
 	qotdElement.innerHTML = `"${quote.quote}"`
 	qotdAuthorElement.innerHTML = quote.author
 	//curl -X GET "https://quotes.rest/qod?category=funny&language=en" -H "accept: application/json"
