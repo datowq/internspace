@@ -9,6 +9,8 @@
 	text-decoration: none;
 }
 
+*::selection { background: transparent; }
+
 body {
 	position: relative;
 	background-color: rgb(51, 51, 51);

@@ -6,6 +6,8 @@
 	font-family: "Poppins";
 }
 
+*::selection { background: transparent; }
+
 body {
 	background-color: #111;
 }
@@ -38,8 +40,6 @@ section h1 {
 	animation: schmove ease 1.5s;
 	animation-fill-mode: forwards;
 }
-
-section h1::selection { background: transparent; }
 
 #centered-button {
 	position: absolute;
