@@ -4,13 +4,14 @@
 		<title>Isaac</title>
 		<link rel="stylesheet" href="assets/css/theme.css">
 		<link rel="icon" href="assets/icon.ico">
+		<script type="text/javascript" src="assets/js/calander.js" defer></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body class="parallax navgrid" data-speed="2">
 		<div class="sidebar"></div>
 		
 		<section class="header">
-			<h1 class="fade-in"><a href="index">isaac</a></h1>
+			<h1 class="fade-in"><a href="index.html">Isaac</a></h1>
 			<div class="navbar">
 				<a href="home"><button class="hide" title="ET go home">home</button></a>
 				<a href="about"><button class="hide" title="intern descriptions (we aren't very interesting)">about</button></a>
@@ -19,9 +20,10 @@
 				<a href="help"><button class="hide" title="ask away">help</button></a>
 			</div>
 		</section>
-
-		<section class="content">
-			<img src="images/dumb.jpg"></img>
+		
+		<section style="position: fixed; top: 200px; left: 4%;">
+			<ul id="calander_week" class="weekdays"></ul>
+			<ul id="calander_day" class="days"></ul>
 		</section>
 
 		<section class="footer">
@@ -29,3 +31,6 @@
 		</section>
 	</body>
 </html>
+
+<!--<img src="assets/images/dumb.jpg"></img> 
+				<a class="btn btn-white-outline" href="assets/images/dumb.jpg">To Space</a> -->

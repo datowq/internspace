@@ -17,8 +17,14 @@ body {
 	padding-bottom: 0;
 	overflow-x: hidden;
 }
+
 body::selection {
 	background: transparent;
+}
+
+.qotd {
+	text-shadow: 3px 3px rgb(0, 0, 0);
+	font-size: 1.3em;
 }
 
 img {
@@ -103,7 +109,7 @@ img {
 /* content */
 .content {
 	grid-column: 2;
-	margin-top: 2em;
+	margin-top: 0em;
 	margin-left: 3em;
 	margin-right: 2.5em;
 	text-decoration: none;
@@ -111,11 +117,16 @@ img {
 	font-weight: 600;
 	color: rgb(255, 255, 255);
 }
-.content i {
-	font-style: italic;
-}
-.content b {
-	font-weight: 900 !important;
+
+.content p {
+	color: black;
+	font-size: 1.25em;
+	background-clip: padding-box;
+	background-color: white;
+	border-radius: 10px;
+	border-width: 2px;
+	padding: 1em;
+	padding-left: 1.5em;
 }
 
 /* footer */
@@ -210,6 +221,7 @@ img {
 .fade-in {
 	animation: fadeIn ease 1s;
 }
+
 @keyframes fadeIn {
 	0% {
 	  opacity:0;
@@ -220,3 +232,36 @@ img {
 	  transform: translate(0px, 0px)
 	}
 }
+
+
+
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  color: #666;
+  text-align: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.days {
+	padding: 10px 0;
+	background: #eee;
+	margin: 0;
+  }
+  
+.days li {
+	list-style-type: none;
+	display: inline-block;
+	width: 7.3em;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size:12px;
+	color: #777;
+  }
