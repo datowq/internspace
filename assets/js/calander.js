@@ -1,4 +1,5 @@
 const daysofweek = ["Mo","Tu","Wed","Th","Fri","Sat","Su"]
+const startDateForMonth = [2]
 
 function DrawCalander()
 {
@@ -18,7 +19,7 @@ function DrawCalander()
     for(let i = 1; i <= 30; i++)
     {
         let li = document.createElement('li')
-        li.textContent = i
+        li.textContent = i + ""
         if(i % 7 == 0) var x = document.createElement('br')
         
         menu.appendChild(li)
