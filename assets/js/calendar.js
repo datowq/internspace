@@ -1,4 +1,6 @@
 const daysofweek = ["Mo","Tu","Wed","Th","Fri","Sat","Su"]
+const startDateForMonth = [1]
+let monthStartIndex = 0
 
 function DrawCalendar()
 {
@@ -15,17 +17,22 @@ function DrawCalendar()
     menu = document.getElementById('calendar_day')
 
     //draw days of the week
-    for(let i = 1; i <= 30; i++)
+    for(let i = startDateForMonth[monthStartIndex] * -1; i <= 30; i++)
     {
-        let li = document.createElement('li')
-        li.textContent = i
-        if(i % 7 == 0) var x = document.createElement('br')
-        
-        menu.appendChild(li)
-        if(x != null)
+        if(i == 0) i++
+
+        if(i > 0)
         {
-            menu.appendChild(x)
-            x = null;
+            let li = document.createElement('li')
+            li.textContent = i
+            
+            menu.appendChild(li)
+        }
+        else
+        {
+            let space = document.createElement('li')
+            space.innerHTML = ''
+            menu.appendChild(space)
         }
     }
 }
