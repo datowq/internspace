@@ -10,7 +10,6 @@ async function updateQOTD(day, month, year) {
 	qotdTitleElement.innerHTML = `Quote of the Day - ${month}/${day}/${year}`
 	qotdElement.innerHTML = `"${quote.quote}"`
 	qotdAuthorElement.innerHTML = quote.author
-	//curl -X GET "https://quotes.rest/qod?category=funny&language=en" -H "accept: application/json"
 }
 
 function StartQOTD() {
