@@ -51,49 +51,6 @@ section h1::selection { background: transparent; }
 	animation-fill-mode: forwards;
 }
 
-/*! Buttons */
-.btn {
-	-webkit-align-items: center;
-	-webkit-background-clip: padding-box;
-	-webkit-justify-content: center;
-	align-items: center;
-	background-clip: padding-box;
-	background-color: white;
-	border-radius: 100px;
-	border-width: 2px;
-	border: 2px solid black;
-	color: black;
-	cursor: pointer;
-	display: -webkit-inline-flex;
-	display: inline-flex;
-	font-size: 1.25em;
-	font-weight: 500;
-	justify-content: center;
-	letter-spacing: 1px;
-	padding: 0.5em 1em;
-	text-decoration: none;
-	transition: all 0.3s ease-in-out;
-	white-space: normal;
-	word-break: break-word;
-	text-shadow: 2px 2px rgb(0, 0, 0);
-	
-}
-.btn-white-outline,
-.btn-white-outline:active,
-.btn-white-outline.active {
-	background: none;
-	border-color: #ffffff;
-	color: #ffffff;
-}
-.btn-white-outline:hover,
-.btn-white-outline:focus,
-.btn-white-outline.focus {
-	color: #000000;
-	background-color: #ffffff;
-	border-color: #ffffff;
-	text-shadow: 0px 0px white;
-}
-
 @keyframes fadeIn {
 	0% {
 	  opacity:0;
