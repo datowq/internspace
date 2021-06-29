@@ -148,47 +148,6 @@ section p {
 	font-size: 1.5em;
 }
 
-/*! buttons */
-.btn {
-	-webkit-align-items: center;
-	-webkit-background-clip: padding-box;
-	-webkit-justify-content: center;
-	align-items: center;
-	background-clip: padding-box;
-	background-color: white;
-	border-radius: 100px;
-	border-width: 2px;
-	border: 2px solid black;
-	color: black;
-	cursor: pointer;
-	display: -webkit-inline-flex;
-	display: inline-flex;
-	font-size: 16px;
-	font-weight: 500;
-	justify-content: center;
-	letter-spacing: 1px;
-	margin: 0.4rem 0.8rem;
-	padding: 0.5em 1em;
-	text-decoration: none;
-	transition: all 0.3s ease-in-out;
-	white-space: normal;
-	word-break: break-word;
-}
-.btn-white-outline,
-.btn-white-outline:active,
-.btn-white-outline.active {
-	background: none;
-	border-color: #ffffff;
-	color: #ffffff;
-}
-.btn-white-outline:hover,
-.btn-white-outline:focus,
-.btn-white-outline.focus {
-	color: #000000;
-	background-color: #ffffff;
-	border-color: #ffffff;
-}
-
 .navgrid {
 	display: grid;
 	grid-template-rows: 10em auto 2.5em;
