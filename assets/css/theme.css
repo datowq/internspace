@@ -246,7 +246,7 @@ section p {
 .weekdays {
   margin: 0;
   padding: 10px 0;
-  background-color:#ddd;
+  background-color:rgb(147, 221, 255);
 }
 
 .weekdays li {
@@ -272,4 +272,11 @@ section p {
 	margin-bottom: 5px;
 	font-size:20px;
 	color: #777;
+  }
+.days-style li:hover,
+.days-style li:focus,
+.days-style li.focus {
+	color: #000000;
+	background-color: #949494;
+	transition: all 0.14s ease-in-out;
   }
