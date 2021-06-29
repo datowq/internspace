@@ -1,4 +1,4 @@
-const daysofweek = ["Mo","Tu","Wed","Th","Fri","Sat","Su"]
+const daysofweek = ["Mo","Tu","We","Th","Fr","Sa","Su"]
 const startDateForMonth = [1]
 let monthStartIndex = 0
 
