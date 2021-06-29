@@ -264,13 +264,15 @@ section p {
   display: inline-block;
   color: #666;
   text-align: center;
-  font-size: 30px;
-  padding-left: 2em;
-  padding-right: 2em;
+  font-size: 2vw;
+  /*
+  padding-left: 6vw;
+  padding-right: 3vw;
+  */
 }
 
 .days {
-	padding: 10px 0;
+	padding: 6px 0;
 	background: #eee;
 	margin: 0;
   }
@@ -278,10 +280,14 @@ section p {
 .days li {
 	list-style-type: none;
 	display: inline-block;
-	width: 8.2em;
+
+	padding-left: 5vw;
+	padding-right: 5vw;
+	width: 12vw;
+
 	text-align: center;
 	margin-bottom: 5px;
-	font-size:20px;
+	font-size:1.3vw;
 	color: #777;
   }
 .days-style li:hover,
@@ -290,4 +296,9 @@ section p {
 	color: #000000;
 	background-color: #949494;
 	transition: all 0.14s ease-in-out;
+  }
+
+.calendar-grid{
+	display: grid;
+  	grid-template-columns: repeat(7, 1fr);  	
   }
