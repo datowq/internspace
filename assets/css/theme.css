@@ -106,27 +106,36 @@ img {
 	display: grid;
 }
 
-/* content */
-.content {
-	grid-column: 2;
-	margin-top: 0em;
-	margin-left: 3em;
-	margin-right: 2.5em;
-	text-decoration: none;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-	font-weight: 600;
-	color: rgb(255, 255, 255);
-}
-
-.content p {
+section p {
 	color: black;
 	font-size: 1.25em;
+	margin-top: 0em;
 	background-clip: padding-box;
 	background-color: white;
 	border-radius: 10px;
 	border-width: 2px;
 	padding: 1em;
 	padding-left: 1.5em;
+}
+
+.quote {
+	grid-column: 2;
+	margin-left: 3em;
+	margin-right: 3em;
+	text-decoration: none;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-weight: 600;
+	color: rgb(255, 255, 255);
+}
+
+/* content */
+.content {
+	grid-column: 2;
+	margin: 3em;
+	text-decoration: none;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-weight: 600;
+	color: rgb(255, 255, 255);
 }
 
 /* footer */
@@ -232,8 +241,6 @@ img {
 	  transform: translate(0px, 0px)
 	}
 }
-
-
 
 
 .weekdays {
