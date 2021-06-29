@@ -120,16 +120,6 @@ section p {
 	padding-left: 1.5em;
 }
 
-.quote {
-	grid-column: 2;
-	margin-left: 3em;
-	margin-right: 3em;
-	text-decoration: none;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-	font-weight: 600;
-	color: rgb(255, 255, 255);
-}
-
 /* content */
 .content {
 	grid-column: 2;
