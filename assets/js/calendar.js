@@ -2,8 +2,6 @@ const daysofweek = ["Mo","Tu","Wed","Th","Fri","Sat","Su"]
 const startDateForMonth = [1]
 let monthStartIndex = 0
 
-let daytobreak = 7 - startDateForMonth[monthStartIndex]
-
 function DrawCalendar()
 {
     let menu = document.getElementById('calendar_week')
@@ -27,19 +25,8 @@ function DrawCalendar()
         {
             let li = document.createElement('li')
             li.textContent = i
-            if(i == daytobreak)
-            { 
-                var x = document.createElement('br')
-                
-                daytobreak += 7
-            }
             
             menu.appendChild(li)
-            if(x != null)
-            {
-                menu.appendChild(x)
-                x = null;
-            }
         }
         else
         {
