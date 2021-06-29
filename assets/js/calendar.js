@@ -1,8 +1,8 @@
 const daysofweek = ["Mo","Tu","Wed","Th","Fri","Sat","Su"]
 
-function DrawCalander()
+function DrawCalendar()
 {
-    let menu = document.getElementById('calander_week')
+    let menu = document.getElementById('calendar_week')
 
     //draw days of the week
     for(let i = 0; i < daysofweek.length; i++)
@@ -12,7 +12,7 @@ function DrawCalander()
         menu.appendChild(li)
     }
 
-    menu = document.getElementById('calander_day')
+    menu = document.getElementById('calendar_day')
 
     //draw days of the week
     for(let i = 1; i <= 30; i++)
@@ -30,4 +30,4 @@ function DrawCalander()
     }
 }
 
-DrawCalander()
+DrawCalendar()
