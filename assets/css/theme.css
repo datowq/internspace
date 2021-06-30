@@ -176,12 +176,12 @@ section p {
 }
 
 @keyframes textcolor {
-    0% {color: rgb(151, 69, 54);}
-    20% {color: rgb(139, 44, 44);}
-    40% {color: rgb(139, 46, 82);}
-    60% {color: rgb(93, 39, 145);}
-    80% {color: rgb(52, 81, 160);}
-    100% {color: rgb(145, 92, 43);}
+	0% {color: rgb(151, 69, 54);}
+	20% {color: rgb(139, 44, 44);}
+	40% {color: rgb(139, 46, 82);}
+	60% {color: rgb(93, 39, 145);}
+	80% {color: rgb(52, 81, 160);}
+	100% {color: rgb(145, 92, 43);}
 }
 
 
