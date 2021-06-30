@@ -33,7 +33,7 @@ img {
 	max-width: 100%;
 }
 
-/* footer */
+/* header */
 .header {
 	grid-column: 2;
 	position: relative;
@@ -120,16 +120,6 @@ section p {
 	padding-left: 1.5em;
 }
 
-.quote {
-	grid-column: 2;
-	margin-left: 3em;
-	margin-right: 3em;
-	text-decoration: none;
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-	font-weight: 600;
-	color: rgb(255, 255, 255);
-}
-
 /* content */
 .content {
 	grid-column: 2;
@@ -138,65 +128,6 @@ section p {
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	font-weight: 600;
 	color: rgb(255, 255, 255);
-}
-
-/* footer */
-.footer {
-	grid-row: 3;
-	grid-column: 1 / 2;
-	background-color: rgb(255, 255, 255);
-	bottom: 0;
-	color: rgb(0, 0, 0);
-	left: 0;
-	position: fixed;
-	height: 2.5em;
-	width: 100%;
-	text-align: center;
-}
-.footer p {
-	font-family: "Poppins";
-	font-size: 1.5em;
-}
-
-/*! buttons */
-.btn {
-	-webkit-align-items: center;
-	-webkit-background-clip: padding-box;
-	-webkit-justify-content: center;
-	align-items: center;
-	background-clip: padding-box;
-	background-color: white;
-	border-radius: 100px;
-	border-width: 2px;
-	border: 2px solid black;
-	color: black;
-	cursor: pointer;
-	display: -webkit-inline-flex;
-	display: inline-flex;
-	font-size: 16px;
-	font-weight: 500;
-	justify-content: center;
-	letter-spacing: 1px;
-	margin: 0.4rem 0.8rem;
-	padding: 0.5em 1em;
-	text-decoration: none;
-	transition: all 0.3s ease-in-out;
-	white-space: normal;
-	word-break: break-word;
-}
-.btn-white-outline,
-.btn-white-outline:active,
-.btn-white-outline.active {
-	background: none;
-	border-color: #ffffff;
-	color: #ffffff;
-}
-.btn-white-outline:hover,
-.btn-white-outline:focus,
-.btn-white-outline.focus {
-	color: #000000;
-	background-color: #ffffff;
-	border-color: #ffffff;
 }
 
 .navgrid {
