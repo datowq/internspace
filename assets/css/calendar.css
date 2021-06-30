@@ -1,5 +1,4 @@
-
-.calendar-button{
+.calendar-button {
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -12,28 +11,28 @@
 }
 
 .weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color:rgb(147, 221, 255);
+	margin: 0;
+	padding: 10px 0;
+	background-color: rgb(147, 221, 255);
 }
 
 .weekdays li {
-  display: inline-block;
-  color: #666;
-  text-align: center;
-  font-size: 2vw;
-  /*
-  padding-left: 6vw;
-  padding-right: 3vw;
-  */
+	display: inline-block;
+	color: #666;
+	text-align: center;
+	font-size: 2vw;
+	/*
+	padding-left: 6vw;
+	padding-right: 3vw;
+	*/
 }
 
 .days {
 	padding: 6px 0;
 	background: #eee;
 	margin: 0;
-  }
-  
+}
+
 .days li {
 	list-style-type: none;
 	display: inline-block;
@@ -44,35 +43,33 @@
 
 	text-align: center;
 	margin-bottom: 5px;
-	font-size:1.3vw;
+	font-size: 1.3vw;
 	color: #777;
-  }
+}
 .days-style li:hover,
 .days-style li:focus,
 .days-style li.focus {
 	color: #000000;
 	background-color: #949494;
 	transition: all 0.14s ease-in-out;
-  }
+}
 
-.calendar-grid{
-	  display: grid;
-  	grid-template-columns: repeat(7, 1fr);  	
-  }
-
+.calendar-grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+}
 
 .tooltiptext {
-    width: 5vw;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-   
-    
-    position: absolute;
-    z-index: 1;
-  }
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
+	width: 5vw;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+
+	position: absolute;
+	z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
