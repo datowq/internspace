@@ -1,37 +1,6 @@
 /* future ref: https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins";
-	text-decoration: none;
-}
-
-*::selection {background: transparent;}
-
-body {
-	position: relative;
-	background-color: rgb(51, 51, 51);
-	border-top: 0;
-	border-radius: 0;
-	padding-bottom: 0;
-	overflow-x: hidden;
-}
-
-body::selection {
-	background: transparent;
-}
-
-.qotd {
-	text-shadow: 3px 3px rgb(0, 0, 0);
-	font-size: 1.3em;
-}
-
-img {
-	max-width: 100%;
-}
 
 /* header */
 .header {
@@ -56,7 +25,7 @@ img {
 	text-shadow: 3px 3px rgb(0, 0, 0);
 	transition: fadeIn 0.6s ease-in-out;
 }
-.header h1>a:hover {
+.header h1 > a:hover {
 	color: rgb(101, 182, 214);
 	transition: all 0.2s ease-in-out;
 }
