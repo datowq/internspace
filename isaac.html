@@ -2,11 +2,14 @@
 <html lang="en">
 	<head>
 		<title>Isaac</title>
+		<link rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" href="assets/css/calendar.css">
+		<meta name="description" content="A customized, easy-access informational site for Lockheed Martin interns.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link defer rel="stylesheet" href="assets/css/theme.css">
 		<link defer rel="stylesheet" href="assets/css/button.css">
 		<link rel="icon" href="assets/icon.ico">
 		<script defer type="text/javascript" src="assets/js/calendar.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body class="parallax navgrid">
 		<div class="sidebar"></div>
@@ -23,9 +26,9 @@
 		</section>
 		
 		<section class="content">
+			<p id="calendar_tooltip" class="tooltiptext"></p>
 			<ul id="calendar_week" class="weekdays calendar-grid"></ul>
 			<ul id="calendar_day" class="days days-style calendar-grid"></ul>
 		</section>
-
 	</body>
 </html>

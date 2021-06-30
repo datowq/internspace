@@ -25,11 +25,7 @@ body {
 	font-size: 1.3em;
 }
 
-img {
-	max-width: 100%;
-}
-
-/* footer */
+/* header */
 .header {
 	grid-column: 2;
 	position: relative;
@@ -49,8 +45,7 @@ img {
 	text-shadow: 3px 3px rgb(0, 0, 0);
 	transition: fadeIn 0.6s ease-in-out;
 }
-
-.header h1>a:hover {
+.header h1 > a:hover {
 	color: rgb(101, 182, 214);
 	transition: all 0.2s ease-in-out;
 }
@@ -75,24 +70,6 @@ section p {
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	font-weight: 600;
 	color: rgb(255, 255, 255);
-}
-
-/* footer */
-.footer {
-	grid-row: 3;
-	grid-column: 1 / 2;
-	background-color: rgb(255, 255, 255);
-	bottom: 0;
-	color: rgb(0, 0, 0);
-	left: 0;
-	position: fixed;
-	height: 2.5em;
-	width: 100%;
-	text-align: center;
-}
-.footer p {
-	font-family: "Poppins";
-	font-size: 1.5em;
 }
 
 .navgrid {
@@ -148,54 +125,3 @@ section p {
     80% {color: rgb(52, 81, 160);}
     100% {color: rgb(145, 92, 43);}
 }
-
-
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color:rgb(147, 221, 255);
-}
-
-.weekdays li {
-  display: inline-block;
-  color: #666;
-  text-align: center;
-  font-size: 2vw;
-  /*
-  padding-left: 6vw;
-  padding-right: 3vw;
-  */
-}
-
-.days {
-	padding: 6px 0;
-	background: #eee;
-	margin: 0;
-  }
-  
-.days li {
-	list-style-type: none;
-	display: inline-block;
-
-	padding-left: 5vw;
-	padding-right: 5vw;
-	width: 12vw;
-
-	text-align: center;
-	margin-bottom: 5px;
-	font-size:1.3vw;
-	color: #777;
-  }
-.days-style li:hover,
-.days-style li:focus,
-.days-style li.focus {
-	color: #000000;
-	background-color: #949494;
-	transition: all 0.14s ease-in-out;
-	cursor: pointer;
-  }
-
-.calendar-grid{
-	display: grid;
-  	grid-template-columns: repeat(7, 1fr);  	
-  }

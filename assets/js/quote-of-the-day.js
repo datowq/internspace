@@ -18,7 +18,7 @@ function StartQOTD() {
 	let month = date.getMonth() + monthOffset
 	let year = date.getFullYear()
 	qotd = updateQOTD(day, month, year)
-		.catch((err) => console.warn)
+		.catch(() => console.warn)
 	setInterval(() => {
 		date = new Date()
 		const currentDay = date.getDate()
@@ -27,7 +27,7 @@ function StartQOTD() {
 			month = date.getMonth() + monthOffset
 			year = date.getFullYear()
 			qotd = updateQOTD(day, month, year)
-				.catch((err) => console.warn)
+				.catch(() => console.warn)
 		}
 	}, 1000)
 }
