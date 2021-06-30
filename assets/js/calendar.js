@@ -2,8 +2,8 @@ const daysofweek = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]
 const startDateForMonth = [1]
 let monthStartIndex = 0
 
-let buttonDays = []
-let buttonIndex = 0
+var buttonDays = []
+var buttonText
 
 function DrawCalendar()
 {
@@ -24,17 +24,23 @@ function DrawCalendar()
 
         if(i > 0)
         {
-            buttonDays[buttonIndex] = new Button(i)
-            let buttonText = buttonDays[buttonIndex].ShowEvents()
+            buttonDays[i - 1] = new Button(i)
 
             let li = document.createElement('li')
             li.textContent = i
             li.addEventListener("mouseleave", ClearCalendarTooltip)
-            li.addEventListener("mouseover", function() { DrawCalendarTooltip(buttonText), false})
+            li.addEventListener("mouseover", function() { 
+                DrawCalendarTooltip(buttonDays[i-1].ShowEvents()), 
+                false})
+
+            function handleEvent(passedInElement) {
+                return function() {
+                    passedInElement.AddEvent()
+                }
+            }
+            li.onclick = handleEvent(buttonDays[i - 1])
 
             menu.appendChild(li)
-
-            buttonIndex++
         }
         else
         {
@@ -74,6 +80,14 @@ class Button
     {
         this.day = dayNum
         this.events = []
+        this.eventIndex = 0
+    }
+
+    AddEvent()
+    {
+        this.events[this.eventIndex] = "Event Add: " + this.day
+        this.eventIndex++
+        DrawCalendarTooltip(this.ShowEvents())
     }
 
     ShowEvents()
@@ -84,6 +98,11 @@ class Button
             //show events on tooltip
             tosay += this.events[i] + "\n"
         }
+        return tosay
+    }
+
+    getDay()
+    {
         return this.day
     }
 }
