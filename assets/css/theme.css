@@ -33,7 +33,7 @@ img {
 	max-width: 100%;
 }
 
-/* footer */
+/* header */
 .header {
 	grid-column: 2;
 	position: relative;
@@ -128,24 +128,6 @@ section p {
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	font-weight: 600;
 	color: rgb(255, 255, 255);
-}
-
-/* footer */
-.footer {
-	grid-row: 3;
-	grid-column: 1 / 2;
-	background-color: rgb(255, 255, 255);
-	bottom: 0;
-	color: rgb(0, 0, 0);
-	left: 0;
-	position: fixed;
-	height: 2.5em;
-	width: 100%;
-	text-align: center;
-}
-.footer p {
-	font-family: "Poppins";
-	font-size: 1.5em;
 }
 
 .navgrid {
