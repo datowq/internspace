@@ -46,7 +46,7 @@ body {
 	transition: fadeIn 0.6s ease-in-out;
 }
 .header h1 > a:hover {
-	color: rgb(32, 173, 255);
+	color: rgb(32, 155, 226);
 	transition: all 0.2s ease-in-out;
 }
 
@@ -95,11 +95,10 @@ section p {
 	height: 300vmax;
 	background-color: rgb(255, 255, 255);
 	position: fixed;
-	transition: background-color 0.2s ease-in-out;
 }
 
 .sidebar:hover {
-	background-color: rgb(101, 182, 214);
+	background-color: rgb(32, 155, 226);
 	transition: background-color 0.2s ease-in-out;
 }
 

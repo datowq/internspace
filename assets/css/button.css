@@ -1,15 +1,14 @@
 .button {
-	-webkit-align-items: center;
+    -webkit-align-items: center;
 	-webkit-background-clip: padding-box;
 	-webkit-justify-content: center;
 	align-items: center;
 	background-clip: padding-box;
-	background-color: white;
+	background-color: transparent;
 	border-radius: 100px;
 	border-width: 2px;
-	border: 2px solid black;
-	color: black;
-	cursor: pointer;
+	border: 2px solid rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
 	display: -webkit-inline-flex;
 	display: inline-flex;
 	font-size: 1.1em;
@@ -19,22 +18,19 @@
 	padding: 0.5em 1em;
 	text-decoration: none;
 	text-shadow: 2px 2px rgb(0, 0, 0);
-	transition: all 0.3s ease-in-out;
-	transition: all 0s ease-in-out;
-	white-space: normal;
-	word-break: break-word;
-}
-.button,
-.button:active,
-.button.active {
-	background: none;
-	border-color: #ffffff;
-	color: #ffffff;
+	transition: background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+    transition: text-shadow 0.1s ease-in-out;
 }
 .button:hover {
 	color: #000000;
 	background-color: #ffffff;
-	border-color: #ffffff;
 	text-shadow: 0px 0px white;
 	transition: all 0.2s ease-in-out;
+}
+
+.button:active {
+    background-color: #a7a7a7;
+    color: white;
+	text-shadow: 0px 0px white;
 }
