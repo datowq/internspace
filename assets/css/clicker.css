@@ -67,8 +67,10 @@ section {
 }
 
 .content {
+	display: grid;
 	grid-column: 2;
     grid-row: 2;
+
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     animation: fadeIn 0.6s ease-in-out;
 }
@@ -80,8 +82,9 @@ section {
 }
 
 .content p2 {
+	padding-right: 2vw;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: white;
 }
 
@@ -142,6 +145,13 @@ section {
     opacity: 0;
     grid-row: 12;
     pointer-events: none;
+}
+
+#hiddenButton{
+	visibility: hidden;
+}
+#visableButton{
+	visibility: visible;
 }
 
 .btn {
