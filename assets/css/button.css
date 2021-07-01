@@ -31,9 +31,7 @@
 	border-color: #ffffff;
 	color: #ffffff;
 }
-.button:hover,
-.button:focus,
-.button.focus {
+.button:hover {
 	color: #000000;
 	background-color: #ffffff;
 	border-color: #ffffff;
