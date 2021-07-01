@@ -28,11 +28,10 @@ body {
 	height: 300vmax;
 	background-color: rgb(255, 255, 255);
 	position: fixed;
-	transition: background-color 0.2s ease-in-out;
 }
 
 .sidebar:hover {
-	background-color: rgb(101, 182, 214);
+	background-color: rgb(32, 155, 226);
 	transition: background-color 0.2s ease-in-out;
 }
 
@@ -87,6 +86,7 @@ section {
 }
 
 #line1 {
+	animation: fadeIn 0.6s ease-in-out;
     grid-row: 3;
 }
 
@@ -187,8 +187,6 @@ section {
     background-color: #a7a7a7;
     color: white;
 	text-shadow: 0px 0px white;
-    transform: rotate(30);
-	transition: all 0s;
 }
 
 @keyframes fadeIn {
