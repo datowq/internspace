@@ -1,5 +1,5 @@
 const daysofweek = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]
-const startDateForMonth = [1]
+const startDateForMonth = [3]
 let monthStartIndex = 0
 
 var buttonDays = []
@@ -19,7 +19,7 @@ function DrawCalendar()
 	menu = document.getElementById("calendar_day")
 
 	//draw days of the week
-	for (let i = startDateForMonth[monthStartIndex] * -1; i <= 30; i++) {
+	for (let i = startDateForMonth[monthStartIndex] * -1; i <= 31; i++) {
 		if (i == 0) i++
 
         if(i > 0)
@@ -35,10 +35,17 @@ function DrawCalendar()
 
             function handleEvent(passedInElement) {
                 return function() {
-                    passedInElement.AddEvent()
+                    passedInElement.AddEvent(passedInElement.getDay())
                 }
             }
             li.onclick = handleEvent(buttonDays[i - 1])
+
+            let date = new Date()
+            let currentDay = date.getDate()
+            if(i == currentDay)
+            {
+                li.className += "calendar-today"    
+            }
 
             menu.appendChild(li)
         }
@@ -72,8 +79,6 @@ function ClearCalendarTooltip()
     tooltip.style.visibility = "hidden"
 }
 
-//ClearCalendarTooltip(document.getElementById('calendar_tooltip'))
-
 class Button
 {
     constructor(dayNum)
@@ -83,9 +88,9 @@ class Button
         this.eventIndex = 0
     }
 
-    AddEvent()
+    AddEvent(eventName)
     {
-        this.events[this.eventIndex] = "Event Add: " + this.day
+        this.events[this.eventIndex] = eventName
         this.eventIndex++
         DrawCalendarTooltip(this.ShowEvents())
     }

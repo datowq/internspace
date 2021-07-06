@@ -59,6 +59,10 @@
 	grid-template-columns: repeat(7, 1fr);
 }
 
+.calendar-today {
+	background-color: rgb(170, 207, 226);
+}
+
 .tooltiptext {
 	width: 5vw;
 	background-color: black;
