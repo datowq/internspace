@@ -147,10 +147,10 @@ section {
     pointer-events: none;
 }
 
-#hiddenButton{
+.hiddenButton{
 	visibility: hidden;
 }
-#visableButton{
+.visableButton{
 	visibility: visible;
 }
 

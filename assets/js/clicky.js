@@ -5,7 +5,7 @@ var threshold = 10;
 var line = 2;
 var increment = 0.25;
 
-function clicky(multiplier, hiddenIndex) {
+function mainClick(multiplier, lineIndex, amountOfUpgrades, ...images) {
     point += increment * multiplier;
     clicks++;
     console.log(clicks, point);
@@ -14,10 +14,24 @@ function clicky(multiplier, hiddenIndex) {
         reveal(threshold, line);
     }
 
-    //!!!!Find a better way to get the hidden buttons so that their Id can be changed and they can be seen!!!
-    let hidden = document.getElementsByClassName(hiddenIndex)
-    hidden.id = "visableButton"
-    console.log(hidden)
+    let menu = document.getElementById("line" + lineIndex)
+    if(menu.children.length <= amountOfUpgrades)
+    {
+        let btn = document.createElement('button')
+        btn.className = "btn"
+        btn.onclick = upgradeClick
+    
+        let img = document.createElement('img')
+        //img.className = images[i]
+        btn.appendChild(img)
+    
+        menu.appendChild(btn)
+    }
+}
+function upgradeClick()
+{
+    //upgrade click things
+    console.log("testing log")
 }
 
 function reveal(min, lineNum ) {
@@ -25,9 +39,16 @@ function reveal(min, lineNum ) {
         document.getElementById('line'+line).style.animation = "fadeIn 0.6s ease";
         document.getElementById('line'+line).style.animationFillMode = "forwards";
         document.getElementById('line'+line).style.pointerEvents = "all";
-        count =+ 10;
+        count += 10;
         threshold = 10*count;
         line++;
     }
+}
+
+function setCookie()
+{
+    let date = new Date()
+    let changedDate = date.getDay
+    document.cookie = "count=1; expires="+ changedDate +"; path=/; domain=lifewire.com";
 }
 
